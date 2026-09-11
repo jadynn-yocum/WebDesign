@@ -7,4 +7,4 @@ I'm doing pretty well! Getting used to the flow of my classes, full time work, a
 Not right now! The examples in the GitHub repository and the code breakdowns in class have been really clear and easy to follow.
 
 ### How did this module go for you?
-This module went smoothly. It was fun moving past basic structures to map 
+This module went smoothly. It was fun moving past basic structures to map .
