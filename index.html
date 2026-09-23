@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadynn Yocum | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .form-container { max-width: 500px; margin: 20px 0; text-align: left; }
+        .form-group { margin-bottom: 15px; display: flex; flex-direction: column; }
+        .form-group label { font-size: 0.95rem; margin-bottom: 5px; font-weight: 600; color: #333; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; box-sizing: border-box; }
+        .form-group textarea { resize: vertical; height: 120px; }
+        .submit-btn { background-color: #333; color: #fff; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .submit-btn:hover { background-color: #555; }
+    </style>
 </head>
 <body>
-
     <header>
         <h1>Jadynn Yocum</h1>
         <p>Photographer, Marketer & Visual Designer</p>
@@ -19,79 +27,55 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        
-        <!-- 🎨 PRIMARY COMPONENT: HERO WITH NESTED CONTENT & FORMATTING -->
         <div class="hero">
-            <img src="images/tundra-landscape.jpg" alt="A sweeping scenic view of open public lands in alaska." class="featured-img">
+            <img src="images/tundra-landscape.jpg" alt="Scenic view of public lands in Alaska." class="featured-img">
             <h2>Capturing the Organic World</h2>
-            <p>Flooding design concepts with natural color palettes. Originally from the Midwest, I relocated to the western United States to gain direct access to public lands and outdoor recreation.</p>
-            <hr> <!-- Appropriate HTML content separation element -->
-            <p class="hero-subtext"><em>Practicing clean, visual storytelling through a strategic lens.</em></p>
+            <p>Flooding design concepts with natural color palettes from the American West.</p>
         </div>
-
         <section id="about">
             <h2>About Me</h2>
-            <p>I am a photographer and marketer with a deep-rooted passion for visual storytelling. Having practiced photography since a young age, I chose to follow this creative drive into higher education to refine my technical skills and strategic mindset. My work focuses heavily on clean, natural designs and custom logo creation.</p>
-            <p>Originally from the Midwest, I relocated to the western United States to gain direct access to public lands and outdoor recreation. This profound connection to the outdoors heavily influences my creative vision, flooding into my design concepts, color palettes, and marketing imagery.</p>
+            <p>Photographer and marketer focused on clean, natural designs and visual storytelling.</p>
         </section>
-
         <section id="projects">
             <h2>My Work</h2>
-            
-            <!-- 🧱 GROUP AND ARRANGE YOUR CARDS CONTAINER -->
             <div class="card-group">
-
-                <!-- 📦 REUSABLE CARD 1 -->
                 <div class="card">
-                    <div class="single-image-container">
-                        <img src="images/YOCUM_A9_logo_final.png" alt="Coulee Kingfisher Fly Fishing Co logo branding system">
-                    </div>
+                    <img src="images/YOCUM_A9_logo_final.png" alt="Coulee Kingfisher logo">
                     <h3>Coulee Kingfisher Brand Identity</h3>
-                    <p><strong>Est. 2023.</strong> A native identity system designed for outdoor recreation companies demonstrating circular alignment and custom typography vectors.</p>
-                    <a href="#" target="_blank">View Design Assets</a>
                 </div>
-
-                <!-- 📦 REUSABLE CARD 2 -->
                 <div class="card">
-                    <div class="single-image-container">
-                        <img src="images/A love letter to montana.jpg" alt="Montana publication cover layout design">
-                    </div>
+                    <img src="images/A love letter to montana.jpg" alt="Montana publication cover">
                     <h3>"Montana Through My Lens"</h3>
-                    <p>A mixed-media layout exploring regional identity through structural typography, intimate portraiture, and rugged mountain landscapes.</p>
-                    <a href="#" target="_blank">View Case Study</a>
                 </div>
-
-                <!-- 📦 REUSABLE CARD 3 -->
                 <div class="card">
-                    <div class="single-image-container">
-                        <img src="images/scottish hills copy.jpg" alt="Highland hills open landscape photography asset study">
-                    </div>
+                    <img src="images/scottish hills copy.jpg" alt="Highland hills landscape">
                     <h3>Western Public Lands Series</h3>
-                    <p>A fine art landscape study focusing on environmental textures, atmospheric depth, and natural light artifacts capturing limestone canyon walls.</p>
-                    <a href="#" target="_blank">View Photo Gallery</a>
                 </div>
-
-            </div> <!-- End of card-group -->
+            </div>
         </section>
-
-        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>Whether you want to collaborate on a marketing project, book a photography session, or talk about brand design, feel free to reach out!</p>
-            <ul>
-                <li>Email: <a href="mailto:jadynnyocum@gmail.com">jadynnyocum@gmail.com</a></li>
-                <li>LinkedIn: <a href="#" target="_blank">LinkedIn Profile</a></li>
-                <li>GitHub: <a href="#" target="_blank">GitHub Profile</a></li>
-            </ul>
+            <p>Feel free to reach out for collaborations or bookings!</p>
+            <form class="form-container" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </section>
-
     </main>
-
     <footer>
         <p>&copy; 2026 Jadynn Yocum. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
