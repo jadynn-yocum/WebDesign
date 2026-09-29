@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"Montana Through My Lens" | Jadynn Yocum</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,9 +16,9 @@
         <p>Photographer, Marketer & Visual Designer</p>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="info.html">Info</a></li>
+                <li><a href="index.html"><i data-lucide="home" style="width:16px; height:16px;"></i>Home</a></li>
+                <li><a href="about.html"><i data-lucide="user" style="width:16px; height:16px;"></i>About Me</a></li>
+                <li><a href="info.html"><i data-lucide="info" style="width:16px; height:16px;"></i>Info</a></li>
             </ul>
         </nav>
     </header>
@@ -25,13 +28,14 @@
             <h2>"Montana Through My Lens" Series</h2>
             <p class="hero-subtext"><em>An exploration of regional identity combining bold typography grids, intimate framing, and rugged mountain textures.</em></p>
             <hr>
-            <a href="index.html" style="color: #116446; font-weight: 600; text-decoration: none;">&larr; Back to Home Portfolio</a>
+            <a href="index.html" style="color: #116446; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+                <i data-lucide="arrow-left" style="width:16px; height:16px;"></i> Back to Home Portfolio
+            </a>
         </div>
 
 
         <section class="extended-gallery">
             <div class="gallery-grid">
-                
                 
                 <div class="gallery-item">
                     <a href="images/A love letter to montana.jpg" target="_blank">
@@ -43,7 +47,6 @@
                     </div>
                 </div>
 
-                
                 <div class="gallery-item">
                     <a href="images/Montana car rides.jpg" target="_blank">
                         <img src="images/Montana car rides.jpg" alt="Rearview mirror reflection tracking snow covered peaks paired with quote blocking">
@@ -54,7 +57,6 @@
                     </div>
                 </div>
 
-               
                 <div class="gallery-item">
                     <a href="images/lucky enough.jpg" target="_blank">
                         <img src="images/lucky enough.jpg" alt="Mountain valley horizon split with custom typography sign vector layers">
@@ -65,7 +67,6 @@
                     </div>
                 </div>
 
-                
                 <div class="gallery-item">
                     <a href="images/hand.jpg" target="_blank">
                         <img src="images/hand.jpg" alt="River currents layered with a hand illustration mountain stamp vector">
@@ -84,5 +85,9 @@
         <p>&copy; 2026 Jadynn Yocum. All rights reserved.</p>
     </footer>
 
+    <script src="https://unpkg.com"></script>
+    <script>
+      lucide.createIcons();
+    </script>
 </body>
 </html>
