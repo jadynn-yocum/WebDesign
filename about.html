@@ -6,53 +6,72 @@
     <title>About Me | Jadynn Yocum</title>
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Jadynn Yocum</h1>
-        <p>Photographer, Marketer & Visual Designer</p>
+        <div class="header-brand">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="Jadynn Yocum Visual Design Logo" class="site-logo">
+            </a>
+            <div class="brand-text">
+                <h1>Jadynn Yocum</h1>
+                <p>Photographer, Marketer & Visual Designer</p>
+            </div>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html"><i data-lucide="home" style="width:16px; height:16px;"></i>Home</a></li>
-                <li><a href="about.html"><i data-lucide="user" style="width:16px; height:16px;"></i>About Me</a></li>
-                <li><a href="info.html"><i data-lucide="info" style="width:16px; height:16px;"></i>Info</a></li>
+                <li><a href="index.html"><img src="images/icon-home.png" alt="" class="nav-icon">Home</a></li>
+                <li><a href="about.html"><img src="images/icon-camera.png" alt="" class="nav-icon">About Me</a></li>
+                <li><a href="info.html"><img src="images/icon-design.png" alt="" class="nav-icon">Info</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        
         <div class="hero">
-            <h2>My Creative Philosophy</h2>
-            <p class="hero-subtext"><em>Blending technical frameworks with organic landscapes.</em></p>
+            <img src="images/tundra-landscape.jpg" alt="A sweeping scenic view of open public lands in alaska." class="featured-img">
+            <h2>The Story Behind the Lens</h2>
+            <p>Originally from the Midwest, my creative journey took a definitive turn when I relocated to the western United States. Driven by a deep need for direct access to public lands and rugged outdoor recreation, I stepped out of the studio and into the wild elements to document landscapes in their rawest states.</p>
             <hr>
-            <p>Visual storytelling is at the heart of everything I create. By blending technical photography rules with structured marketing design, I create clean, minimalist identities that help brands tell their authentic stories.</p>
+            <p class="hero-subtext"><em>Blending environmental perspective with strategic visual marketing.</em></p>
         </div>
 
-        <section id="bio-details">
-            <h2>Background & Direct Access</h2>
+        <section id="philosophy">
+            <h2>Creative Philosophy</h2>
             <div class="card-group">
+
                 <div class="card">
-                    <h3>The Creative Drive</h3>
-                    <p>Practicing photography since a young age, I pursued higher education to refine my technical skills and strategic mindset, focusing on clean, natural designs.</p>
+                    <h3>Organic Balance</h3>
+                    <p>I build brand ecosystems using deep earth tones and rich textures inspired by public lands. By discarding cold, synthetic defaults, my design framework highlights warmth and breathing room.</p>
                 </div>
+
                 <div class="card">
-                    <h3>Western Roots</h3>
-                    <p>Relocating to the western United States for outdoor access, my profound connection to nature heavily influences my creative vision and color palettes.</p>
+                    <h3>Strategic Storytelling</h3>
+                    <p>Visual assets must do more than look beautiful; they need to function. Whether crafting editorial print covers or high-contrast interfaces, data shapes every composition choices I make.</p>
                 </div>
+
+                <div class="card">
+                    <h3>Conservation Focus</h3>
+                    <p>My fine art prints and mixed-media layouts are intended to honor untouched environments. Every photo capture focuses heavily on preserving natural lighting artifacts and local geography stories.</p>
+                </div>
+
             </div>
         </section>
+
+        <section id="connect-cta" style="text-align: center;">
+            <h2>Let's Build Something Natural</h2>
+            <p>Looking to collaborate on a publication layout, update your brand strategy, or commission custom landscape photography?</p>
+            <p><a href="index.html#contact" class="submit-btn" style="text-decoration: none; display: inline-block;">Get In Touch</a></p>
+        </section>
+
     </main>
 
     <footer>
         <p>&copy; 2026 Jadynn Yocum. All rights reserved.</p>
     </footer>
-
-    <script src="https://unpkg.com"></script>
-    <script>
-      lucide.createIcons();
-    </script>
 </body>
 </html>
