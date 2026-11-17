@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Reading Room: Interest-driven book discovery built around young adults' real-world hobbies.">
     <title>The Reading Room | Interest-Driven Discovery</title>
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Comfortaa:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-dark-forest: #0b140e;
@@ -62,47 +63,49 @@
         </nav>
     </header>
     <div class="content-container">
-        <section class="hero-section">
-            <p class="subtitle">A 3-Week Blueprint to Make Books Appealing to Young Adults</p>
-            <h1>Books don't have to feel like homework.</h1>
-            <p class="tagline">Skip the rigid, academic categories. Explore books built entirely around your real-world hobbies with zero judgment.</p>
-        </section>
-        <section id="discovery-hub" class="hub-section">
-            <div class="section-title-area">
-                <span class="badge">Page 1</span>
-                <h2>Visual Discovery Hub</h2>
-                <p>What are you into today? Click a card below to reveal your book match.</p>
-            </div>
-            <div class="quiz-grid">
-                <div class="hobby-card" onclick="toggleMatch('gaming-match')">
-                    <div class="card-icon">🎮</div>
-                    <h3>Gaming</h3>
-                    <p>For strategic minds, lore hunters, and fast paces.</p>
-                    <div id="gaming-match" class="book-match-reveal">
-                        <h4>✨ Perfect Match:</h4>
-                        <p><strong>Ready Player One</strong> or high-stakes light novels.</p>
+        <main>
+            <section class="hero-section">
+                <p class="subtitle">A 3-Week Blueprint to Make Books Appealing to Young Adults</p>
+                <h1>Books don't have to feel like homework.</h1>
+                <p class="tagline">Skip the rigid, academic categories. Explore books built entirely around your real-world hobbies with zero judgment.</p>
+            </section>
+            <section id="discovery-hub" class="hub-section">
+                <div class="section-title-area">
+                    <span class="badge">Page 1</span>
+                    <h2>Visual Discovery Hub</h2>
+                    <p>What are you into today? Click a card below to reveal your book match.</p>
+                </div>
+                <div class="quiz-grid">
+                    <div class="hobby-card" onclick="toggleMatch('gaming-match')">
+                        <div class="card-icon">🎮</div>
+                        <h3>Gaming</h3>
+                        <p>For strategic minds, lore hunters, and fast paces.</p>
+                        <div id="gaming-match" class="book-match-reveal">
+                            <h4>✨ Perfect Match:</h4>
+                            <p><strong>Ready Player One</strong> or high-stakes light novels.</p>
+                        </div>
+                    </div>
+                    <div class="hobby-card" onclick="toggleMatch('crime-match')">
+                        <div class="card-icon">🔍</div>
+                        <h3>True Crime</h3>
+                        <p>For armchair detectives and psychological puzzle solvers.</p>
+                        <div id="crime-match" class="book-match-reveal">
+                            <h4>✨ Perfect Match:</h4>
+                            <p><strong>A Good Girl's Guide to Murder</strong> or fast-paced thrillers.</p>
+                        </div>
+                    </div>
+                    <div class="hobby-card" onclick="toggleMatch('tech-match')">
+                        <div class="card-icon">💻</div>
+                        <h3>Tech & Sci-Fi</h3>
+                        <p>For futurists, AI explorers, and system builders.</p>
+                        <div id="tech-match" class="book-match-reveal">
+                            <h4>✨ Perfect Match:</h4>
+                            <p><strong>Warcross</strong> or immersive cyberpunk short manga series.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="hobby-card" onclick="toggleMatch('crime-match')">
-                    <div class="card-icon">🔍</div>
-                    <h3>True Crime</h3>
-                    <p>For armchair detectives and psychological puzzle solvers.</p>
-                    <div id="crime-match" class="book-match-reveal">
-                        <h4>✨ Perfect Match:</h4>
-                        <p><strong>A Good Girl's Guide to Murder</strong> or fast-paced thrillers.</p>
-                    </div>
-                </div>
-                <div class="hobby-card" onclick="toggleMatch('tech-match')">
-                    <div class="card-icon">💻</div>
-                    <h3>Tech & Sci-Fi</h3>
-                    <p>For futurists, AI explorers, and system builders.</p>
-                    <div id="tech-match" class="book-match-reveal">
-                        <h4>✨ Perfect Match:</h4>
-                        <p><strong>Warcross</strong> or immersive cyberpunk short manga series.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
         <footer class="main-footer">
             <p>© 2026 The Reading Room. Dedicated to Young Readers.</p>
         </footer>
